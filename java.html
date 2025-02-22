@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mela Code 101 - Learn Java</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="animate-title"><i class="fab fa-java"></i>  Java Programming</h1>
+        <p>A portal for Java programming enthusiasts</p>
+    </header>
+
+    <nav>
+        <a href="#intro"><i class="fab fa-java"></i> Introduction to Java</a>
+        <a href="#hacking"><i class="fas fa-shield-alt"></i> Java & Hacking</a>
+        <a href="#best-sites"><i class="fas fa-globe"></i> Best Websites to Learn Java</a>
+        <a href="#uses"><i class="fas fa-cogs"></i> Uses of Java</a>
+    </nav>
+
+    <div class="container">
+        <main>
+            <article id="intro">
+                <h2><i class="fab fa-java"></i> What is Java and How Does It Work?</h2>
+                <p class="post-meta">Published on February 8, 2025 by Mela Code 101</p>
+                <p>Java is a versatile, object-oriented programming language designed for building cross-platform applications, including web services, mobile apps, and enterprise solutions. It's known for its "write once, run anywhere" capability through the use of the Java Virtual Machine (JVM).</p>
+                <h3>How Java Programs Run</h3>
+                <ul>
+                    <li>Java programs are written in .java files and compiled into bytecode using the <code>javac</code> compiler.</li>
+                    <li>The bytecode is then run on the JVM, which translates it into machine code specific to the host system.</li>
+                    <li>Java applications are typically run with the <code>java</code> command.</li>
+                </ul>
+                <img src="IMG/java.png" alt="Java Programming">
+            </article>
+
+            <article id="history">
+                <h2><i class="fas fa-history"></i> History of Java</h2>
+                <p>Java was created by James Gosling and Mike Sheridan at Sun Microsystems in 1991. Initially designed for embedded systems, Java quickly became popular for building platform-independent software. It was released in 1995 and later acquired by Oracle Corporation in 2010. Today, Java powers millions of applications worldwide, from web servers to mobile devices.</p>
+            </article>
+
+            <article id="loops">
+                <h2><i class="fas fa-sync-alt"></i> Java Loops</h2>
+                <p>Java supports multiple types of loops, including the <code>for</code>, <code>while</code>, and <code>do-while</code> loops, allowing programmers to repeat code execution efficiently.</p>
+                <h3>For Loop Example</h3>
+                <pre><code>for (int i = 1; i <= 5; i++) {
+    System.out.println("Loop iteration: " + i);
+}</code></pre>
+                <p>This will print numbers 1 to 5 as the loop iterates.</p>
+
+                <h3>While Loop Example</h3>
+                <pre><code>int i = 1;
+while (i <= 5) {
+    System.out.println("Iteration: " + i);
+    i++;
+}</code></pre>
+                <p>This example prints iteration numbers until the condition is false.</p>
+            </article>
+
+            <article id="slicing">
+                <h2><i class="fas fa-cut"></i> Slicing in Java</h2>
+                <p>In Java, slicing is primarily applied to arrays or strings. Here's how you can get a substring or subarray:</p>
+                <h3>String Slicing Example</h3>
+                <pre><code>String str = "Hello, World!";
+String subStr = str.substring(7, 12); <br>// Output: World</code></pre>
+                <p>This extracts the substring from index 7 to index 12 (excluding 12).</p>
+
+                <h3>Array Slicing Example</h3>
+                <pre><code>int[] arr = {1, 2, 3, 4, 5};
+int[] slicedArr = Arrays.copyOfRange(arr, 1, 4); <br>
+// Output: {2, 3, 4}</code></pre>
+                <p>This slices the array from index 1 to index 4 (excluding 4).</p>
+            </article>
+
+            <article id="hacking">
+                <h2><i class="fas fa-shield-alt"></i> Java & Hacking</h2>
+                <p>Java plays a significant role in ethical hacking, especially in developing tools and scripts for penetration testing. Some use cases include:</p>
+                <ul>
+                    <li>Building custom penetration testing tools</li>
+                    <li>Writing exploits or payloads</li>
+                    <li>Creating network analysis programs</li>
+                    <li>Automating hacking tasks in a controlled environment</li>
+                </ul>
+                <p>Many security professionals prefer Java because of its strong typing, which helps catch bugs early, and its vast library ecosystem.</p>
+            </article>
+
+            <article id="best-sites">
+                <h2><i class="fas fa-globe"></i> Best Websites to Learn Java</h2>
+                <p>Here are some of the best resources to master Java programming:</p>
+                <ul>
+                    <li><a href="https://www.oracle.com/java/" target="_blank">Oracle Java Documentation</a> - Official Java documentation and resources.</li>
+                    <li><a href="https://www.codecademy.com/learn/learn-java" target="_blank">Codecademy Java Course</a> - Interactive lessons on Java programming.</li>
+                    <li><a href="https://www.udemy.com/topic/java/" target="_blank">Udemy</a> - Java courses for all levels of learners.</li>
+                    <li><a href="https://www.javatpoint.com/" target="_blank">Javatpoint</a> - A great resource for tutorials and Java programming examples.</li>
+                    <li><a href="https://www.geeksforgeeks.org/java/" target="_blank">GeeksforGeeks</a> - Learn Java with tutorials, quizzes, and coding challenges.</li>
+                </ul>
+            </article>
+
+            <article id="uses">
+                <h2><i class="fas fa-cogs"></i> Uses of Java</h2>
+                <p>Java is widely used in various fields:</p>
+                <ul>
+                    <li>Building enterprise-level applications</li>
+                    <li>Mobile application development (Android)</li>
+                    <li>Web application development using frameworks like Spring</li>
+                    <li>Server-side programming</li>
+                    <li>Big Data and Cloud computing</li>
+                </ul>
+                <p>Its platform independence and robust security features make it ideal for building scalable, high-performance applications.</p>
+            </article>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2025 Mela Code 101. All rights reserved.</p>
+    </footer>
+</body>
+</html>

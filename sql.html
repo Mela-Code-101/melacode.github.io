@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mela Code 101 - Learn SQL</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1 class="animate-title"><i class="fas fa-database"></i> SQL Programming</h1>
+        <p>A portal for SQL database enthusiasts</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#step1"><i class="fas fa-bug"></i> Bug Bounty</a>
+        <a href="#step2"><i class="fas fa-database"></i> SQL Optimization</a>
+        <a href="#step3"><i class="fas fa-lock"></i> SQL Security</a>
+        <a href="#step4"><i class="fas fa-cogs"></i> Advanced SQL Queries</a>
+        <a href="#step5"><i class="fas fa-hammer"></i> Fix the Bug</a>
+    </nav>
+
+    <div class="container">
+        <main>
+            <article>
+                <!-- Step 1: Bug Bounty -->
+                <div class="sql-step" id="step1">
+                    <h3>Step 1: Bug Bounty in SQL</h3>
+                    <p>Learn about common vulnerabilities in SQL queries and how bug bounty programs can help identify and fix them.</p>
+                    <ul>
+                        <li>SQL Injection</li>
+                        <li>Improper Input Validation</li>
+                        <li>Unsecured Database Connections</li>
+                    </ul>
+                </div>
+
+                <!-- Step 2: SQL Optimization -->
+                <div class="sql-step" id="step2">
+                    <h3>Step 2: SQL Optimization</h3>
+                    <p>Learn the best practices for optimizing SQL queries for better performance, scalability, and faster retrieval of data.</p>
+                    <ul>
+                        <li>Indexing</li>
+                        <li>Query Caching</li>
+                        <li>Efficient Joins</li>
+                    </ul>
+                </div>
+
+                <!-- Step 3: SQL Security -->
+                <div class="sql-step" id="step3">
+                    <h3>Step 3: SQL Security</h3>
+                    <p>Understand the importance of securing SQL databases and preventing common security vulnerabilities.</p>
+                    <ul>
+                        <li>Access Control</li>
+                        <li>Data Encryption</li>
+                        <li>SQL Injection Prevention</li>
+                    </ul>
+                </div>
+
+                <!-- Step 4: Advanced SQL Queries -->
+                <div class="sql-step" id="step4">
+                    <h3>Step 4: Advanced SQL Queries</h3>
+                    <p>Explore more advanced SQL techniques, such as subqueries, complex joins, and data manipulation.</p>
+                    <ul>
+                        <li>Subqueries</li>
+                        <li>Complex Joins</li>
+                        <li>Stored Procedures</li>
+                    </ul>
+                </div>
+
+                <!-- Step 5: Fix the SQL Bug -->
+                <div class="sql-step" id="step5">
+                    <h3>Step 5: Fix the SQL Bug Challenge</h3>
+                    <p>Below is a SQL query with a bug. Try to fix it to make it work correctly. The current query will fail due to an incorrect table name and missing condition in the WHERE clause.</p>
+                    
+                    <pre><code>SELECT * FROM users WHERE id = 1;</code></pre>
+                    <p><strong>Bug: </strong>There is no table called "users". The query will fail.</p>
+                    <p><strong>Your Task:</strong> Update the query to use the correct table name and ensure it returns the expected result. Once you're ready, try it out in your SQL environment.</p>
+                    <button onclick="copyCode()">Copy Fixed Code</button>
+
+                    <!-- Fixed SQL Query -->
+                    <h4>Fixed SQL Query:</h4>
+                    <pre><code id="fixed-code">SELECT * FROM employees WHERE<br> employee_id = 1;</code></pre>
+                </div>
+            </article>
+        </main>
+
+        <aside>
+            <h2>Additional Resources</h2>
+            <ul>
+                <li><a href="#">Introduction to SQL and Databases</a></li>
+                <li><a href="#">Mastering SQL Joins and Indexes</a></li>
+                <li><a href="#">SQL for Data Science and Analytics</a></li>
+                <li><a href="#">Database Optimization Techniques</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>© 2025 Mela Code 101. All rights reserved.</p>
+    </footer>
+    <script>
+        function copyCode() {
+            var copyText = document.getElementById("fixed-code");
+            var range = document.createRange();
+            range.selectNode(copyText);
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+            alert("Code copied to clipboard!");
+        }
+    </script>
+</body>
+</html>
